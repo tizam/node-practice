@@ -1,0 +1,9 @@
+{{> header}}
+<section class="about">
+  {{#each about}}
+  <h2>{{title}}</h2>
+  <img src="{{img}}" alt="" class="mr-2">
+  <p class="mt-2">{{body}}</p>
+  {{/each}}
+</section>
+{{> footer}}

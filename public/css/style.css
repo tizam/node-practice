@@ -1,0 +1,9 @@
+.about img {
+  float: left;
+}
+
+.about::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,25 @@
+{{> header}}
+
+  <div class="jumbotron">
+    <h1>Node Practice</h1>
+    <p class="lead">Simple website to practice NodeJS </p>
+    <a href="/about" class="btn btn-primary btn-lg">Learn more</a>
+  </div>
+
+  <div class="row">
+    {{#each services}}
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{{imgUrl}}" alt="img" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">{{title}}</h4>
+          <p class="card-text">{{desc}}</p>
+          <a href="{{url}}" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+{{> footer}}
